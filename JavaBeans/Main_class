@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        // Create a new Person object
+        Person person = new Person();
+
+        // Set properties using setter methods
+        person.setName("John");
+        person.setAge(30);
+
+        // Get properties using getter methods and print
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+
+        // Print the entire object using overridden toString method
+        System.out.println("Person details: " + person);
+    }
+}
