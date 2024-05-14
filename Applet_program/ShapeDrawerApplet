@@ -1,0 +1,38 @@
+import java.applet.Applet;
+import java.awt.*;
+
+public class ShapeDrawerApplet extends Applet {
+
+    // Init method to set up the applet
+    public void init() {
+        // Set the applet size
+        setSize(400, 400);
+    }
+
+    // Paint method to draw shapes on the applet window
+    public void paint(Graphics g) {
+        // Set the color to blue
+        g.setColor(Color.BLUE);
+
+        // Draw a rectangle
+        g.drawRect(50, 50, 100, 50);
+
+        // Set the color to red
+        g.setColor(Color.RED);
+
+        // Draw a filled oval
+        g.fillOval(200, 50, 80, 80);
+
+        // Set the color to green
+        g.setColor(Color.GREEN);
+
+        // Draw a filled rounded rectangle
+        g.fillRoundRect(50, 150, 120, 80, 20, 20);
+
+        // Set the color to magenta
+        g.setColor(Color.MAGENTA);
+
+        // Draw a filled arc
+        g.fillArc(200, 150, 100, 100, 90, 180);
+    }
+}
